@@ -324,6 +324,7 @@ void ATP_Character::FireFromWeapon() {
 	}
 
 	bool bHit = GetWorld()->LineTraceSingleByChannel(Hit, Start, End, ECC_Pawn, Params);
+		
 	OnCharacterTraceLine.Broadcast();
 
 	if (bHit) {
